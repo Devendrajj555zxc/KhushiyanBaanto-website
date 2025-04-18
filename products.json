@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Colorful Painting Kit",
+    "image": "images/product1.jpg",
+    "price": 500,
+    "link": "https://externalstorelink.com"
+  },
+  {
+    "name": "Advanced Acrylic Kit",
+    "image": "images/product2.jpg",
+    "price": 1200,
+    "link": "https://externalstorelink.com"
+  }
+]

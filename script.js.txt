@@ -1,0 +1,7 @@
+function logVisitorIP() {
+  fetch('backend/ip-logger.php')
+    .then(response => response.text())
+    .then(data => {
+      alert("Thank you! Your visit is logged.");
+    });
+}

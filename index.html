@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KhushiyanBaanto - NGO</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+  <a href="#">🏠 Home</a>
+
+  <!-- Donate Button in Navbar -->
+  <li><a href="#" id="donate-btn"><i class="fas fa-hand-holding-heart"></i> 🤝 Donate</a></li>
+  <!-- Donation Message Modal -->
+<div id="donate-popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closeDonatePopup()">&times;</span>
+    <p>🙏 To donate, please click on the flipping coin below the banner.</p>
+  </div>
+</div>
+
+
+<a href="https://www.youtube.com/@CreativityforKids" target="_blank">📹 Videos</a>
+  <a href="diary.html" target="_blank" class="nav-icon">📖 Diary</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">🛍️ Creative Products ⮟</button>
+    <div class="dropdown-content">
+      <a href="https://your-store.com/painting-kits" target="_blank">🎨 Painting Kits</a>
+      <a href="https://your-store.com/engineering-kits" target="_blank">🔧 Engineering Kits</a>
+      <a href="https://your-store.com/handcrafts" target="_blank">🧶 Handcrafts</a>
+      <a href="https://your-store.com/cloth-creativity" target="_blank">👗 Cloth Creativity</a>
+      <a href="https://your-store.com/stone-crafts" target="_blank">🪨 Stone Crafts</a>
+      <a href="https://your-store.com/wooden-crafts" target="_blank">🪵 Wooden Crafts</a>
+    </div>
+  </div>
+
+</nav>
+
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="images/banner2.jpg" alt="KhushiyanBaanto NGO Banner">
+  </div>
+
+
+<!-- Purpose Section -->
+  <div class="purpose-grid">
+    <h2>Our Purpose</h2>
+    <p>We aim to bring smiles through creativity, learning, and shared kindness. Your support helps us empower children and youth with hands-on skills and hope.</p>
+  </div>
+
+
+  <!-- Flipping Coin (on top of QR) -->
+  <img id="flipping-coin" src="images/flipping-coin.png" alt="Flip Coin" class="coin" onclick="revealQR()">
+
+  <!-- QR Code (initially hidden) -->
+  <img id="qr-code" src="images/donation-qr.png" alt="Donate QR Code" class="qr-code">
+</div>
+
+<!-- Sound for Donation -->
+<audio id="thankyou-sound" src="images/ding.mp3" preload="auto"></audio>
+
+
+  <!-- Smile Image -->
+  <div class="smile-image">
+    <img src="images/smile-kids.jpg" alt="Smiling Children">
+  </div>
+
+  
+
+  <!-- Promo Video -->
+  <div class="video-section">
+    <video controls width="600">
+      <source src="images/promo-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials">
+    <h2>Testimonials</h2>
+    <p>“This NGO helped my child become confident with crafts!” – A happy parent</p>
+    <p>“A lovely initiative. Glad I could contribute!” – A donor</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 KhushiyanBaanto. All rights reserved.</p>
+    <p>Registered Office: 123 Joy Street, Civil Lines, Roorkee, India</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

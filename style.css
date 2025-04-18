@@ -1,0 +1,372 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fffefc;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #fdf1e5;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.navbar a, .dropbtn {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  background-color: #ffd591;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffaf0;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.banner img, .smile-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.qr-coin-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.qr-card {
+  text-align: center;
+  background: #fff8f0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 200px;
+  cursor: pointer;
+}
+
+.icon-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.purpose-grid {
+  text-align: center;
+  background: #fff3d9;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+}
+
+.testimonials {
+  background: #f9f9f9;
+  padding: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fddbb0;
+  font-size: 14px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #fdf1e5;
+  padding: 15px;
+}
+
+.navbar a, .dropbtn {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 16px;
+  background-color: #ffe6b3;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar a:hover, .dropbtn:hover {
+  background-color: #ffc966;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fffaf0;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffecd2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 25px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ffe54c;
+}
+
+/* QR Container */
+.qr-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 60px auto;
+}
+
+/* Hidden QR Code */
+.qr-code {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease forwards;
+}
+
+.qr-code img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 3px solid #00b894;
+  box-shadow: 0 0 15px #00b894;
+}
+
+/* Flipping Coin Over QR */
+.flipping-coin {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 220px;
+  height: 220px;
+  cursor: pointer;
+  z-index: 2;
+  animation: flip 2s infinite linear;
+}
+
+.flipping-coin img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Animation: Coin Flip */
+@keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+/* Animation: Fade In QR */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pulse Animation on Coin */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 223, 0, 0.6);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(255, 223, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 223, 0, 0);
+  }
+}
+
+
+
+/* Banner container with relative positioning */
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flipping Coin Positioned in Center */
+.coin {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+  animation: flip 0.15s infinite linear;
+}
+
+/* QR Code Hidden Initially */
+.qr-code {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  width: px;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Coin flip animation */
+@keyframes flip {
+  0%   { transform: translate(-50%, -50%) rotateY(0); }
+  100% { transform: translate(-50%, -50%) rotateY(360deg); }
+}
+
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content p {
+  font-size: 18px;
+  color: #444;
+}
+
+.popup .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup .close:hover {
+  color: red;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
